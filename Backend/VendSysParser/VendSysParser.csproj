@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.1.66" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="6.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\VendSysParser.Core\VendSysParser.Core.csproj" />
+    <ProjectReference Include="..\VendSysParser.Application\VendSysParser.Application.csproj" />
+    <ProjectReference Include="..\VendSysParser.Infrastructure\VendSysParser.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

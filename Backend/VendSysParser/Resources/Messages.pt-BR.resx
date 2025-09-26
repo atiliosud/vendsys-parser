@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AuthenticationSuccessful" xml:space="preserve">
+    <value>Autenticação realizada com sucesso</value>
+  </data>
+  <data name="AuthenticationFailed" xml:space="preserve">
+    <value>Falha na autenticação para usuário: {0}</value>
+  </data>
+  <data name="CredentialsValidationError" xml:space="preserve">
+    <value>Erro ao validar credenciais para usuário: {0}</value>
+  </data>
+  <data name="DexFileProcessedSuccessfully" xml:space="preserve">
+    <value>Arquivo DEX processado com sucesso</value>
+  </data>
+  <data name="DexFileUploadedSuccessfully" xml:space="preserve">
+    <value>Arquivo DEX enviado com sucesso. DEXMeterId: {0}, NomeArquivo: {1}</value>
+  </data>
+  <data name="ErrorProcessingDexFile" xml:space="preserve">
+    <value>Erro ao processar arquivo DEX</value>
+  </data>
+  <data name="ErrorProcessingDexFileUpload" xml:space="preserve">
+    <value>Erro ao processar envio do arquivo DEX</value>
+  </data>
+  <data name="RequestMustBeMultipartFormData" xml:space="preserve">
+    <value>Requisição deve ser multipart/form-data</value>
+  </data>
+  <data name="NoFileProvidedOrEmpty" xml:space="preserve">
+    <value>Nenhum arquivo fornecido ou arquivo está vazio</value>
+  </data>
+  <data name="InvalidFileType" xml:space="preserve">
+    <value>Tipo de arquivo inválido. Tipos permitidos: {0}</value>
+  </data>
+  <data name="FileContentIsEmpty" xml:space="preserve">
+    <value>Conteúdo do arquivo está vazio</value>
+  </data>
+  <data name="DatabaseConnectionNotConfigured" xml:space="preserve">
+    <value>String de conexão com banco de dados não configurada</value>
+  </data>
+  <data name="AnErrorOccurredProcessingDexFile" xml:space="preserve">
+    <value>Ocorreu um erro ao processar o arquivo DEX</value>
+  </data>
+  <data name="ID1SegmentNotFound" xml:space="preserve">
+    <value>Segmento ID1 não encontrado no arquivo DEX</value>
+  </data>
+  <data name="InvalidID1SegmentFormat" xml:space="preserve">
+    <value>Formato do segmento ID1 inválido</value>
+  </data>
+  <data name="VA1SegmentNotFound" xml:space="preserve">
+    <value>Segmento VA1 não encontrado no arquivo DEX</value>
+  </data>
+  <data name="InvalidVA1SegmentFormat" xml:space="preserve">
+    <value>Formato do segmento VA1 inválido</value>
+  </data>
+  <data name="InvalidVA101Value" xml:space="preserve">
+    <value>Valor VA101 inválido: {0}</value>
+  </data>
+</root>
