@@ -30,16 +30,19 @@ This backend API provides two main endpoints for authenticating users and proces
 ## API Endpoints
 
 ### 1. Authentication
+
 ```http
 POST /api/authenticate
 Authorization: Basic <base64-encoded-credentials>
 ```
 
 **Response:**
+
 - `200 OK` - Authentication successful
 - `401 Unauthorized` - Invalid credentials
 
 ### 2. DEX File Upload
+
 ```http
 POST /api/dex
 Authorization: Basic <base64-encoded-credentials>
@@ -49,6 +52,7 @@ file: [DEX file content]
 ```
 
 **Response:**
+
 - `200 OK` - File processed successfully
 - `400 Bad Request` - Invalid file format
 - `401 Unauthorized` - Authentication failed
@@ -81,7 +85,9 @@ Backend/
 ## Configuration
 
 ### Database Connection
+
 Update `appsettings.json`:
+
 ```json
 {
   "ConnectionStrings": {
@@ -91,6 +97,7 @@ Update `appsettings.json`:
 ```
 
 ### Authentication Credentials
+
 ```json
 {
   "Authentication": {
@@ -105,6 +112,7 @@ Update `appsettings.json`:
 The system processes DEX files with the following segments:
 
 ### Required Segments
+
 - **ID1**: Machine identification
   - Position 1: Machine Serial Number (ID101)
   - Position 6: Machine ID (ID106)
@@ -118,6 +126,7 @@ The system processes DEX files with the following segments:
   - Position 2: Value of Paid Sales (PA202)
 
 ### Sample DEX File
+
 ```
 DXS*9V0001
 ID1*1234567890*2*ID106*TEST_MACHINE*5*6
@@ -135,6 +144,7 @@ DXE*1*1
 ## Database Schema
 
 ### DEXMeter Table
+
 ```sql
 CREATE TABLE DEXMeter (
     Id INT IDENTITY(1,1) PRIMARY KEY,
@@ -146,6 +156,7 @@ CREATE TABLE DEXMeter (
 ```
 
 ### DEXLaneMeter Table
+
 ```sql
 CREATE TABLE DEXLaneMeter (
     Id INT IDENTITY(1,1) PRIMARY KEY,
@@ -161,6 +172,7 @@ CREATE TABLE DEXLaneMeter (
 ## Getting Started
 
 ### Prerequisites
+
 - .NET 9 SDK
 - SQL Server LocalDB or SQL Server Express
 - Visual Studio 2022 or VS Code
@@ -168,26 +180,31 @@ CREATE TABLE DEXLaneMeter (
 ### Installation
 
 1. **Clone the repository**
+   
    ```bash
    git clone https://github.com/atiliosud/vendsys-parser.git
    cd vendsys-parser/Backend
    ```
 
 2. **Restore packages**
+   
    ```bash
    dotnet restore
    ```
 
 3. **Setup database**
+   
    - Run the SQL scripts in `/Database` folder
    - Update connection string in `appsettings.json`
 
 4. **Run the application**
+   
    ```bash
    dotnet run --project VendSysParser
    ```
 
 5. **Run tests**
+   
    ```bash
    dotnet test
    ```
@@ -197,18 +214,22 @@ The API will be available at `http://localhost:5000`
 ## Testing
 
 ### Unit Tests
+
 The project includes comprehensive unit tests:
+
 - **29 tests total** - All passing ✅
 - **Service tests** - Authentication and DEX parsing logic
 - **DTO tests** - Request/response model validation
 - **Mock testing** - Using Moq framework for dependencies
 
 Run tests:
+
 ```bash
 dotnet test --verbosity normal
 ```
 
 ### Manual Testing
+
 Use tools like Postman or curl to test the endpoints:
 
 ```bash
@@ -225,16 +246,19 @@ curl -X POST http://localhost:5000/api/dex \
 ## Architecture Decisions
 
 ### Clean Architecture
+
 - **Separation of Concerns**: Each layer has specific responsibilities
 - **Dependency Inversion**: Dependencies point inward toward the domain
 - **No Repository Pattern**: Direct data access using Dapper (as per requirements)
 
 ### Minimal API Pattern
+
 - **Lightweight**: No controller overhead
 - **Modern approach**: Leverages .NET 9 features
 - **Simple routing**: Direct endpoint mapping
 
 ### Error Handling
+
 - **Global exception middleware**: Centralized error processing
 - **Structured logging**: Minimal but informative logs
 - **User-friendly responses**: Localized error messages
@@ -242,12 +266,14 @@ curl -X POST http://localhost:5000/api/dex \
 ## Development Guidelines
 
 ### Code Standards
+
 - **No hardcoded strings**: All text in .resx files
 - **Minimal logging**: Only critical events
 - **English in code**: PT-BR in user messages
 - **Clean code**: KISS principle applied
 
 ### Prohibited Patterns
+
 - Entity Framework Core
 - Repository pattern
 - CQRS/MediatR
@@ -256,7 +282,7 @@ curl -X POST http://localhost:5000/api/dex \
 
 ## License
 
-This project is developed for Atilio Camargo Moreira as a technical demonstration.
+This project is developed by Atilio Camargo Moreira as a technical demonstration.
 
 ## Contact
 
