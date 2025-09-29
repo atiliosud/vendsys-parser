@@ -1,6 +1,7 @@
 import React from 'react';
 import { AppHeader } from './app-header.component';
 import { AppFooter } from './app-footer.component';
+import './app-layout.component.css';
 
 interface AppLayoutProps {
   children: React.ReactNode;

@@ -201,26 +201,6 @@ body {
   color: var(--nayax-success);
 }
 
-/* Header */
-.app-header {
-  background-color: var(--nayax-dark);
-  color: var(--nayax-white);
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.app-logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-.app-tagline {
-  font-size: 0.875rem;
-  color: var(--nayax-primary);
-  margin-top: 0.25rem;
-}
 
 /* Loading */
 .loading {
@@ -387,23 +367,11 @@ body {
   border-radius: 0 0 7px 7px;
 }
 
-/* App Footer */
-.app-footer {
-  background-color: var(--nayax-white);
-  border-top: 1px solid var(--nayax-border);
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
-}
 
 .app-container-with-footer {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
 }
 
@@ -420,41 +388,3 @@ body {
   margin-top: 1rem;
 }
 
-/* Login Page Styles */
-.login-title-container {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  justify-content: flex-start;
-}
-
-.login-logo {
-  height: 32px;
-  width: auto;
-  object-fit: contain;
-}
-
-.login-title-text {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #2d3748;
-}
-
-/* Header Layout Styles */
-.header-brand-container {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.header-logo {
-  height: 50px;
-  width: auto;
-  object-fit: contain;
-}
-
-.header-text-container {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}

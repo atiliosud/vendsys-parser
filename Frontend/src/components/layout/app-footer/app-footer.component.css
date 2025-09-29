@@ -1,0 +1,14 @@
+/* App Footer */
+.app-footer {
+  background-color: var(--nayax-white);
+  border-top: 1px solid var(--nayax-border);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}

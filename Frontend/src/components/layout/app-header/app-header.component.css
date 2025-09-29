@@ -1,0 +1,39 @@
+/* Header */
+.app-header {
+  background-color: var(--nayax-dark);
+  color: var(--nayax-white);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.app-tagline {
+  font-size: 0.875rem;
+  color: var(--nayax-primary);
+  margin-top: 0.25rem;
+}
+
+/* Header Layout Styles */
+.header-brand-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header-logo {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+.header-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
