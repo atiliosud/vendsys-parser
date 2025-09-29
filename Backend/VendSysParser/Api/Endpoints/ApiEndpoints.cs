@@ -20,23 +20,70 @@ public static class ApiEndpoints
 
         // Authentication endpoint
         app.MapPost("/api/authenticate", AuthenticateUser)
-           .RequireAuthorization()
+           .AllowAnonymous()
            .Produces<AuthenticationResponse>(200)
            .Produces<ErrorResponse>(401)
            .Produces<ErrorResponse>(500);
 
         // DEX upload endpoint
         app.MapPost("/api/dex", UploadDexFile)
-           .RequireAuthorization()
-           .Produces<DexUploadResponse>(200)
-           .Produces<ErrorResponse>(400)
-           .Produces<ErrorResponse>(500);
+        .Produces<DexUploadResponse>(200)
+        .Produces<ErrorResponse>(400)
+        .Produces<ErrorResponse>(500)
+        .DisableAntiforgery();
+    }
+
+    private static async Task<IResult> UploadDexFile(
+        HttpContext context,
+        DexParserService parser,
+        IConfiguration config,
+        ILogger<Program> logger,
+        ILocalizationService localization)
+    {
+        try
+        {
+            if (!context.Request.HasFormContentType)
+            {
+                return Results.BadRequest(new ErrorResponse(localization.RequestMustBeMultipartFormData()));
+            }
+
+            var form = await context.Request.ReadFormAsync();
+            var file = form.Files.FirstOrDefault();
+
+            if (file == null || file.Length == 0)
+            {
+                return Results.BadRequest(new ErrorResponse(localization.NoFileProvided()));
+            }
+
+            if (!file.FileName.EndsWith(".txt", StringComparison.OrdinalIgnoreCase) &&
+                !file.FileName.EndsWith(".dex", StringComparison.OrdinalIgnoreCase))
+            {
+                return Results.BadRequest(new ErrorResponse(localization.OnlyTextFilesAllowed()));
+            }
+
+            using var reader = new StreamReader(file.OpenReadStream());
+            var content = await reader.ReadToEndAsync();
+
+            var connectionString = config.GetConnectionString("DefaultConnection")
+                ?? throw new InvalidOperationException(localization.DatabaseConnectionNotConfigured());
+
+            var dexMeterId = await parser.ParseAndSaveAsync(content, connectionString);
+
+            logger.LogInformation("DEX file processed successfully. DexMeterId: {DexMeterId}", dexMeterId);
+
+            return Results.Ok(new DexUploadResponse(localization.DexFileProcessedSuccessfully(), dexMeterId));
+        }
+        catch (Exception ex)
+        {
+            logger.LogError(ex, "Error processing DEX file");
+            return Results.StatusCode(500);
+        }
     }
 
     private static IResult AuthenticateUser(
         HttpContext context,
         AuthService authService,
-        LocalizationService localization)
+        ILocalizationService localization)
     {
         try
         {
@@ -62,50 +109,4 @@ public static class ApiEndpoints
         }
     }
 
-    private static async Task<IResult> UploadDexFile(
-        HttpContext context,
-        DexParserService parser,
-        IConfiguration config,
-        ILogger logger,
-        LocalizationService localization)
-    {
-        // Validate content type
-        if (!context.Request.HasFormContentType)
-        {
-            return Results.BadRequest(new ErrorResponse(localization.RequestMustBeMultipartFormData()));
-        }
-
-        var form = await context.Request.ReadFormAsync();
-        var file = form.Files.FirstOrDefault();
-
-        if (file == null || file.Length == 0)
-        {
-            return Results.BadRequest(new ErrorResponse(localization.NoFileProvided()));
-        }
-
-        if (!file.FileName.EndsWith(".txt", StringComparison.OrdinalIgnoreCase))
-        {
-            return Results.BadRequest(new ErrorResponse(localization.OnlyTextFilesAllowed()));
-        }
-
-        try
-        {
-            using var reader = new StreamReader(file.OpenReadStream());
-            var content = await reader.ReadToEndAsync();
-
-            var connectionString = config.GetConnectionString("DefaultConnection")
-                ?? throw new InvalidOperationException(localization.DatabaseConnectionNotConfigured());
-
-            var dexMeterId = await parser.ParseAndSaveAsync(content, connectionString);
-
-            logger.LogInformation("DEX file processed successfully. DexMeterId: {DexMeterId}", dexMeterId);
-
-            return Results.Ok(new DexUploadResponse(localization.DexFileProcessedSuccessfully(), dexMeterId));
-        }
-        catch (Exception ex)
-        {
-            logger.LogError(ex, "Error processing DEX file");
-            return Results.StatusCode(500);
-        }
-    }
 }

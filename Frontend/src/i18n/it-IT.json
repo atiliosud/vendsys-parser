@@ -1,0 +1,25 @@
+{
+  "login": {
+    "title": "Accesso",
+    "username": "Nome utente",
+    "password": "Password",
+    "button": "Accedi",
+    "error": "Credenziali non valide",
+    "invalidCredentials": "Nome utente o password non validi"
+  },
+  "upload": {
+    "title": "Caricamento File DEX",
+    "selectFile": "Seleziona File",
+    "uploadButton": "Carica File",
+    "success": "File elaborato con successo",
+    "error": "Errore nell'elaborazione del file",
+    "invalidFile": "Formato file non valido",
+    "noFileSelected": "Nessun file selezionato",
+    "logout": "Disconnetti"
+  },
+  "common": {
+    "loading": "Caricamento...",
+    "error": "Errore",
+    "success": "Successo"
+  }
+}

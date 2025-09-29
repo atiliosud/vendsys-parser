@@ -59,66 +59,66 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AuthenticationSuccessful" xml:space="preserve">
-    <value>Autenticação realizada com sucesso</value>
+    <value>Authentification réussie</value>
   </data>
   <data name="AuthenticationFailed" xml:space="preserve">
-    <value>Falha na autenticação para usuário: {0}</value>
+    <value>Échec de l'authentification pour l'utilisateur : {0}</value>
   </data>
   <data name="CredentialsValidationError" xml:space="preserve">
-    <value>Erro ao validar credenciais para usuário: {0}</value>
+    <value>Erreur lors de la validation des identifiants pour l'utilisateur : {0}</value>
   </data>
   <data name="DexFileProcessedSuccessfully" xml:space="preserve">
-    <value>Arquivo DEX processado com sucesso</value>
+    <value>Fichier DEX traité avec succès</value>
   </data>
   <data name="DexFileUploadedSuccessfully" xml:space="preserve">
-    <value>Arquivo DEX enviado com sucesso. DEXMeterId: {0}, NomeArquivo: {1}</value>
+    <value>Fichier DEX téléchargé avec succès. DexMeterId : {0}, NomFichier : {1}</value>
   </data>
   <data name="ErrorProcessingDexFile" xml:space="preserve">
-    <value>Erro ao processar arquivo DEX</value>
+    <value>Erreur lors du traitement du fichier DEX</value>
   </data>
   <data name="ErrorProcessingDexFileUpload" xml:space="preserve">
-    <value>Erro ao processar envio do arquivo DEX</value>
+    <value>Erreur lors du traitement du téléchargement du fichier DEX</value>
   </data>
   <data name="RequestMustBeMultipartFormData" xml:space="preserve">
-    <value>Requisição deve ser multipart/form-data</value>
+    <value>La requête doit être multipart/form-data</value>
   </data>
   <data name="NoFileProvidedOrEmpty" xml:space="preserve">
-    <value>Nenhum arquivo fornecido ou arquivo está vazio</value>
+    <value>Aucun fichier fourni ou fichier vide</value>
   </data>
   <data name="InvalidFileType" xml:space="preserve">
-    <value>Tipo de arquivo inválido. Tipos permitidos: {0}</value>
+    <value>Type de fichier invalide. Types autorisés : {0}</value>
   </data>
   <data name="FileContentIsEmpty" xml:space="preserve">
-    <value>Conteúdo do arquivo está vazio</value>
+    <value>Le contenu du fichier est vide</value>
   </data>
   <data name="DatabaseConnectionNotConfigured" xml:space="preserve">
-    <value>String de conexão com banco de dados não configurada</value>
+    <value>Chaîne de connexion à la base de données non configurée</value>
   </data>
   <data name="AnErrorOccurredProcessingDexFile" xml:space="preserve">
-    <value>Ocorreu um erro ao processar o arquivo DEX</value>
+    <value>Une erreur s'est produite lors du traitement du fichier DEX</value>
   </data>
   <data name="ID1SegmentNotFound" xml:space="preserve">
-    <value>Segmento ID1 não encontrado no arquivo DEX</value>
+    <value>Segment ID1 introuvable dans le fichier DEX</value>
   </data>
   <data name="InvalidID1SegmentFormat" xml:space="preserve">
-    <value>Formato do segmento ID1 inválido</value>
+    <value>Format de segment ID1 invalide</value>
   </data>
   <data name="VA1SegmentNotFound" xml:space="preserve">
-    <value>Segmento VA1 não encontrado no arquivo DEX</value>
+    <value>Segment VA1 introuvable dans le fichier DEX</value>
   </data>
   <data name="InvalidVA1SegmentFormat" xml:space="preserve">
-    <value>Formato do segmento VA1 inválido</value>
+    <value>Format de segment VA1 invalide</value>
   </data>
   <data name="InvalidVA101Value" xml:space="preserve">
-    <value>Valor VA101 inválido: {0}</value>
+    <value>Valeur VA101 invalide : {0}</value>
   </data>
   <data name="NoFileProvided" xml:space="preserve">
-    <value>Nenhum arquivo fornecido</value>
+    <value>Aucun fichier fourni</value>
   </data>
   <data name="OnlyTextFilesAllowed" xml:space="preserve">
-    <value>Apenas arquivos de texto são permitidos</value>
+    <value>Seuls les fichiers texte sont autorisés</value>
   </data>
   <data name="InternalServerError" xml:space="preserve">
-    <value>Erro interno do servidor</value>
+    <value>Erreur interne du serveur</value>
   </data>
 </root>

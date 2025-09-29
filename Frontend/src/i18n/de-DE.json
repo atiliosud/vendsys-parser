@@ -1,0 +1,25 @@
+{
+  "login": {
+    "title": "Anmeldung",
+    "username": "Benutzername",
+    "password": "Passwort",
+    "button": "Anmelden",
+    "error": "Ungültige Anmeldedaten",
+    "invalidCredentials": "Ungültiger Benutzername oder Passwort"
+  },
+  "upload": {
+    "title": "DEX Datei Upload",
+    "selectFile": "Datei auswählen",
+    "uploadButton": "Datei hochladen",
+    "success": "Datei erfolgreich verarbeitet",
+    "error": "Fehler beim Verarbeiten der Datei",
+    "invalidFile": "Ungültiges Dateiformat",
+    "noFileSelected": "Keine Datei ausgewählt",
+    "logout": "Abmelden"
+  },
+  "common": {
+    "loading": "Laden...",
+    "error": "Fehler",
+    "success": "Erfolg"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "login": {
+    "title": "Connexion",
+    "username": "Nom d'utilisateur",
+    "password": "Mot de passe",
+    "button": "Se connecter",
+    "error": "Identifiants invalides",
+    "invalidCredentials": "Nom d'utilisateur ou mot de passe invalide"
+  },
+  "upload": {
+    "title": "Téléchargement de Fichier DEX",
+    "selectFile": "Sélectionner un Fichier",
+    "uploadButton": "Télécharger le Fichier",
+    "success": "Fichier traité avec succès",
+    "error": "Erreur lors du traitement du fichier",
+    "invalidFile": "Format de fichier invalide",
+    "noFileSelected": "Aucun fichier sélectionné",
+    "logout": "Déconnexion"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "success": "Succès"
+  }
+}

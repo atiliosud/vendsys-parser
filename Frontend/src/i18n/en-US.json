@@ -1,0 +1,25 @@
+{
+  "login": {
+    "title": "Login",
+    "username": "Username",
+    "password": "Password",
+    "button": "Sign In",
+    "error": "Invalid credentials",
+    "invalidCredentials": "Invalid username or password"
+  },
+  "upload": {
+    "title": "DEX File Upload",
+    "selectFile": "Select File",
+    "uploadButton": "Upload File",
+    "success": "File processed successfully",
+    "error": "Error processing file",
+    "invalidFile": "Invalid file format",
+    "noFileSelected": "No file selected",
+    "logout": "Logout"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success"
+  }
+}

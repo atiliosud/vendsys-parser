@@ -1,0 +1,25 @@
+{
+  "login": {
+    "title": "Logga in",
+    "username": "Användarnamn",
+    "password": "Lösenord",
+    "button": "Logga in",
+    "error": "Ogiltiga inloggningsuppgifter",
+    "invalidCredentials": "Ogiltigt användarnamn eller lösenord"
+  },
+  "upload": {
+    "title": "DEX Filuppladdning",
+    "selectFile": "Välj Fil",
+    "uploadButton": "Ladda upp Fil",
+    "success": "Filen har bearbetats",
+    "error": "Fel vid bearbetning av fil",
+    "invalidFile": "Ogiltigt filformat",
+    "noFileSelected": "Ingen fil vald",
+    "logout": "Logga ut"
+  },
+  "common": {
+    "loading": "Laddar...",
+    "error": "Fel",
+    "success": "Framgång"
+  }
+}

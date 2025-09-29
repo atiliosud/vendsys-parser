@@ -11,4 +11,11 @@ public interface ILocalizationService
     string ErrorProcessingDexFile();
     string AuthenticationFailed(string username);
     string CredentialsValidationError(string username);
+    string AuthenticationSuccessful();
+    string RequestMustBeMultipartFormData();
+    string NoFileProvided();
+    string OnlyTextFilesAllowed();
+    string DatabaseConnectionNotConfigured();
+    string DexFileProcessedSuccessfully();
+    string InternalServerError();
 }

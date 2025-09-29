@@ -16,7 +16,7 @@ public class ExceptionHandlingMiddleware
         _logger = logger;
     }
 
-    public async Task InvokeAsync(HttpContext context, LocalizationService localization)
+    public async Task InvokeAsync(HttpContext context, ILocalizationService localization)
     {
         try
         {
@@ -29,7 +29,7 @@ public class ExceptionHandlingMiddleware
         }
     }
 
-    private static async Task HandleExceptionAsync(HttpContext context, Exception exception, LocalizationService localization)
+    private static async Task HandleExceptionAsync(HttpContext context, Exception exception, ILocalizationService localization)
     {
         context.Response.ContentType = "application/json";
 

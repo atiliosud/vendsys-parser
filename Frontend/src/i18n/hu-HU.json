@@ -1,0 +1,25 @@
+{
+  "login": {
+    "title": "Bejelentkezés",
+    "username": "Felhasználónév",
+    "password": "Jelszó",
+    "button": "Bejelentkezés",
+    "error": "Érvénytelen hitelesítő adatok",
+    "invalidCredentials": "Érvénytelen felhasználónév vagy jelszó"
+  },
+  "upload": {
+    "title": "DEX Fájl Feltöltés",
+    "selectFile": "Fájl Kiválasztása",
+    "uploadButton": "Fájl Feltöltése",
+    "success": "Fájl sikeresen feldolgozva",
+    "error": "Hiba a fájl feldolgozása során",
+    "invalidFile": "Érvénytelen fájlformátum",
+    "noFileSelected": "Nincs kiválasztott fájl",
+    "logout": "Kijelentkezés"
+  },
+  "common": {
+    "loading": "Betöltés...",
+    "error": "Hiba",
+    "success": "Sikeres"
+  }
+}

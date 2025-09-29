@@ -1,0 +1,25 @@
+{
+  "login": {
+    "title": "Kirjaudu sisään",
+    "username": "Käyttäjänimi",
+    "password": "Salasana",
+    "button": "Kirjaudu",
+    "error": "Virheelliset kirjautumistiedot",
+    "invalidCredentials": "Virheellinen käyttäjänimi tai salasana"
+  },
+  "upload": {
+    "title": "DEX-tiedoston lataus",
+    "selectFile": "Valitse tiedosto",
+    "uploadButton": "Lataa tiedosto",
+    "success": "Tiedosto käsitelty onnistuneesti",
+    "error": "Virhe tiedoston käsittelyssä",
+    "invalidFile": "Virheellinen tiedostomuoto",
+    "noFileSelected": "Tiedostoa ei valittu",
+    "logout": "Kirjaudu ulos"
+  },
+  "common": {
+    "loading": "Ladataan...",
+    "error": "Virhe",
+    "success": "Onnistui"
+  }
+}

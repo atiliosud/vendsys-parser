@@ -1,28 +1,42 @@
 using System.Globalization;
 using System.Resources;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Localization;
 
 namespace VendSysParser.Application.Services;
 
 public class LocalizationService : ILocalizationService
 {
     private readonly ResourceManager _resourceManager;
-    private readonly CultureInfo _currentCulture;
+    private readonly IHttpContextAccessor _httpContextAccessor;
 
-    public LocalizationService()
+    public LocalizationService(IHttpContextAccessor httpContextAccessor)
     {
         _resourceManager = new ResourceManager("VendSysParser.Resources.Messages", typeof(LocalizationService).Assembly);
+        _httpContextAccessor = httpContextAccessor;
+    }
 
-        // Set initial language to PT-BR as per requirements
-        _currentCulture = new CultureInfo("pt-BR");
-        CultureInfo.CurrentCulture = _currentCulture;
-        CultureInfo.CurrentUICulture = _currentCulture;
+    private CultureInfo GetCurrentCulture()
+    {
+        // Try to get culture from HTTP context first
+        var httpContext = _httpContextAccessor?.HttpContext;
+        if (httpContext != null)
+        {
+            var culture = httpContext.Features.Get<IRequestCultureFeature>()?.RequestCulture?.Culture;
+            if (culture != null)
+                return culture;
+        }
+
+        // Fallback to current thread culture, or default to en-US
+        return CultureInfo.CurrentUICulture ?? new CultureInfo("en-US");
     }
 
     public string GetString(string key, params object[] args)
     {
         try
         {
-            var message = _resourceManager.GetString(key, _currentCulture);
+            var culture = GetCurrentCulture();
+            var message = _resourceManager.GetString(key, culture);
 
             if (string.IsNullOrEmpty(message))
             {
@@ -31,7 +45,7 @@ public class LocalizationService : ILocalizationService
             }
 
             // Format with arguments if provided
-            return args.Length > 0 ? string.Format(message, args) : message;
+            return args.Length > 0 ? string.Format(culture, message, args) : message;
         }
         catch
         {

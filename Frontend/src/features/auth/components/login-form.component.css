@@ -1,0 +1,19 @@
+/* Login Page Styles */
+.login-title-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: flex-start;
+}
+
+.login-logo {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+}
+
+.login-title-text {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--nayax-dark);
+}

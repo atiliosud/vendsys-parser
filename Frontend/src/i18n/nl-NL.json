@@ -1,0 +1,25 @@
+{
+  "login": {
+    "title": "Inloggen",
+    "username": "Gebruikersnaam",
+    "password": "Wachtwoord",
+    "button": "Aanmelden",
+    "error": "Ongeldige inloggegevens",
+    "invalidCredentials": "Ongeldige gebruikersnaam of wachtwoord"
+  },
+  "upload": {
+    "title": "DEX Bestand Uploaden",
+    "selectFile": "Selecteer Bestand",
+    "uploadButton": "Upload Bestand",
+    "success": "Bestand succesvol verwerkt",
+    "error": "Fout bij verwerken bestand",
+    "invalidFile": "Ongeldig bestandsformaat",
+    "noFileSelected": "Geen bestand geselecteerd",
+    "logout": "Uitloggen"
+  },
+  "common": {
+    "loading": "Laden...",
+    "error": "Fout",
+    "success": "Succes"
+  }
+}

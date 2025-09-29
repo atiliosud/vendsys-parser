@@ -59,66 +59,66 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AuthenticationSuccessful" xml:space="preserve">
-    <value>Autenticação realizada com sucesso</value>
+    <value>Authenticatie succesvol</value>
   </data>
   <data name="AuthenticationFailed" xml:space="preserve">
-    <value>Falha na autenticação para usuário: {0}</value>
+    <value>Authenticatie mislukt voor gebruiker: {0}</value>
   </data>
   <data name="CredentialsValidationError" xml:space="preserve">
-    <value>Erro ao validar credenciais para usuário: {0}</value>
+    <value>Fout bij het valideren van inloggegevens voor gebruiker: {0}</value>
   </data>
   <data name="DexFileProcessedSuccessfully" xml:space="preserve">
-    <value>Arquivo DEX processado com sucesso</value>
+    <value>DEX-bestand succesvol verwerkt</value>
   </data>
   <data name="DexFileUploadedSuccessfully" xml:space="preserve">
-    <value>Arquivo DEX enviado com sucesso. DEXMeterId: {0}, NomeArquivo: {1}</value>
+    <value>DEX-bestand succesvol geüpload. DexMeterId: {0}, BestandsNaam: {1}</value>
   </data>
   <data name="ErrorProcessingDexFile" xml:space="preserve">
-    <value>Erro ao processar arquivo DEX</value>
+    <value>Fout bij het verwerken van DEX-bestand</value>
   </data>
   <data name="ErrorProcessingDexFileUpload" xml:space="preserve">
-    <value>Erro ao processar envio do arquivo DEX</value>
+    <value>Fout bij het verwerken van DEX-bestand upload</value>
   </data>
   <data name="RequestMustBeMultipartFormData" xml:space="preserve">
-    <value>Requisição deve ser multipart/form-data</value>
+    <value>Verzoek moet multipart/form-data zijn</value>
   </data>
   <data name="NoFileProvidedOrEmpty" xml:space="preserve">
-    <value>Nenhum arquivo fornecido ou arquivo está vazio</value>
+    <value>Geen bestand opgegeven of bestand is leeg</value>
   </data>
   <data name="InvalidFileType" xml:space="preserve">
-    <value>Tipo de arquivo inválido. Tipos permitidos: {0}</value>
+    <value>Ongeldig bestandstype. Toegestane types: {0}</value>
   </data>
   <data name="FileContentIsEmpty" xml:space="preserve">
-    <value>Conteúdo do arquivo está vazio</value>
+    <value>Bestandsinhoud is leeg</value>
   </data>
   <data name="DatabaseConnectionNotConfigured" xml:space="preserve">
-    <value>String de conexão com banco de dados não configurada</value>
+    <value>Database verbindingsstring niet geconfigureerd</value>
   </data>
   <data name="AnErrorOccurredProcessingDexFile" xml:space="preserve">
-    <value>Ocorreu um erro ao processar o arquivo DEX</value>
+    <value>Er is een fout opgetreden bij het verwerken van het DEX-bestand</value>
   </data>
   <data name="ID1SegmentNotFound" xml:space="preserve">
-    <value>Segmento ID1 não encontrado no arquivo DEX</value>
+    <value>ID1-segment niet gevonden in DEX-bestand</value>
   </data>
   <data name="InvalidID1SegmentFormat" xml:space="preserve">
-    <value>Formato do segmento ID1 inválido</value>
+    <value>Ongeldig ID1-segment formaat</value>
   </data>
   <data name="VA1SegmentNotFound" xml:space="preserve">
-    <value>Segmento VA1 não encontrado no arquivo DEX</value>
+    <value>VA1-segment niet gevonden in DEX-bestand</value>
   </data>
   <data name="InvalidVA1SegmentFormat" xml:space="preserve">
-    <value>Formato do segmento VA1 inválido</value>
+    <value>Ongeldig VA1-segment formaat</value>
   </data>
   <data name="InvalidVA101Value" xml:space="preserve">
-    <value>Valor VA101 inválido: {0}</value>
+    <value>Ongeldige VA101-waarde: {0}</value>
   </data>
   <data name="NoFileProvided" xml:space="preserve">
-    <value>Nenhum arquivo fornecido</value>
+    <value>Geen bestand opgegeven</value>
   </data>
   <data name="OnlyTextFilesAllowed" xml:space="preserve">
-    <value>Apenas arquivos de texto são permitidos</value>
+    <value>Alleen tekstbestanden toegestaan</value>
   </data>
   <data name="InternalServerError" xml:space="preserve">
-    <value>Erro interno do servidor</value>
+    <value>Interne serverfout</value>
   </data>
 </root>

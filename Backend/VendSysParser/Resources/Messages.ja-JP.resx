@@ -59,66 +59,66 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AuthenticationSuccessful" xml:space="preserve">
-    <value>Autenticação realizada com sucesso</value>
+    <value>認証に成功しました</value>
   </data>
   <data name="AuthenticationFailed" xml:space="preserve">
-    <value>Falha na autenticação para usuário: {0}</value>
+    <value>ユーザーの認証に失敗しました: {0}</value>
   </data>
   <data name="CredentialsValidationError" xml:space="preserve">
-    <value>Erro ao validar credenciais para usuário: {0}</value>
+    <value>ユーザーの資格情報の検証でエラーが発生しました: {0}</value>
   </data>
   <data name="DexFileProcessedSuccessfully" xml:space="preserve">
-    <value>Arquivo DEX processado com sucesso</value>
+    <value>DEXファイルが正常に処理されました</value>
   </data>
   <data name="DexFileUploadedSuccessfully" xml:space="preserve">
-    <value>Arquivo DEX enviado com sucesso. DEXMeterId: {0}, NomeArquivo: {1}</value>
+    <value>DEXファイルが正常にアップロードされました。DexMeterId: {0}, ファイル名: {1}</value>
   </data>
   <data name="ErrorProcessingDexFile" xml:space="preserve">
-    <value>Erro ao processar arquivo DEX</value>
+    <value>DEXファイルの処理中にエラーが発生しました</value>
   </data>
   <data name="ErrorProcessingDexFileUpload" xml:space="preserve">
-    <value>Erro ao processar envio do arquivo DEX</value>
+    <value>DEXファイルのアップロード処理中にエラーが発生しました</value>
   </data>
   <data name="RequestMustBeMultipartFormData" xml:space="preserve">
-    <value>Requisição deve ser multipart/form-data</value>
+    <value>リクエストはmultipart/form-dataである必要があります</value>
   </data>
   <data name="NoFileProvidedOrEmpty" xml:space="preserve">
-    <value>Nenhum arquivo fornecido ou arquivo está vazio</value>
+    <value>ファイルが提供されていないか、ファイルが空です</value>
   </data>
   <data name="InvalidFileType" xml:space="preserve">
-    <value>Tipo de arquivo inválido. Tipos permitidos: {0}</value>
+    <value>無効なファイルタイプです。許可されているタイプ: {0}</value>
   </data>
   <data name="FileContentIsEmpty" xml:space="preserve">
-    <value>Conteúdo do arquivo está vazio</value>
+    <value>ファイルの内容が空です</value>
   </data>
   <data name="DatabaseConnectionNotConfigured" xml:space="preserve">
-    <value>String de conexão com banco de dados não configurada</value>
+    <value>データベース接続文字列が構成されていません</value>
   </data>
   <data name="AnErrorOccurredProcessingDexFile" xml:space="preserve">
-    <value>Ocorreu um erro ao processar o arquivo DEX</value>
+    <value>DEXファイルの処理中にエラーが発生しました</value>
   </data>
   <data name="ID1SegmentNotFound" xml:space="preserve">
-    <value>Segmento ID1 não encontrado no arquivo DEX</value>
+    <value>DEXファイル内でID1セグメントが見つかりません</value>
   </data>
   <data name="InvalidID1SegmentFormat" xml:space="preserve">
-    <value>Formato do segmento ID1 inválido</value>
+    <value>無効なID1セグメント形式です</value>
   </data>
   <data name="VA1SegmentNotFound" xml:space="preserve">
-    <value>Segmento VA1 não encontrado no arquivo DEX</value>
+    <value>DEXファイル内でVA1セグメントが見つかりません</value>
   </data>
   <data name="InvalidVA1SegmentFormat" xml:space="preserve">
-    <value>Formato do segmento VA1 inválido</value>
+    <value>無効なVA1セグメント形式です</value>
   </data>
   <data name="InvalidVA101Value" xml:space="preserve">
-    <value>Valor VA101 inválido: {0}</value>
+    <value>無効なVA101値です: {0}</value>
   </data>
   <data name="NoFileProvided" xml:space="preserve">
-    <value>Nenhum arquivo fornecido</value>
+    <value>ファイルが提供されていません</value>
   </data>
   <data name="OnlyTextFilesAllowed" xml:space="preserve">
-    <value>Apenas arquivos de texto são permitidos</value>
+    <value>テキストファイルのみ許可されています</value>
   </data>
   <data name="InternalServerError" xml:space="preserve">
-    <value>Erro interno do servidor</value>
+    <value>内部サーバーエラー</value>
   </data>
 </root>
