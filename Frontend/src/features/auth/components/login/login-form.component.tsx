@@ -5,7 +5,7 @@ import { Button, Input, Card } from '../../../../components/ui';
 import { AppFooter } from '../../../../components/layout';
 import { useAuth } from '../../hooks/use-auth.hook';
 import type { LoginRequest } from '../../types';
-import nayaxLogo from '../../../assets/nayax-logo.png';
+import nayaxLogo from '../../../../assets/nayax-logo.png';
 import './login-form.component.css';
 
 interface LoginFormProps {

@@ -1,6 +1,6 @@
 import React from 'react';
-import { AppHeader } from './app-header.component';
-import { AppFooter } from './app-footer.component';
+import { AppHeader } from '../app-header';
+import { AppFooter } from '../app-footer';
 import './app-layout.component.css';
 
 interface AppLayoutProps {

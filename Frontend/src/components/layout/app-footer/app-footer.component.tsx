@@ -1,5 +1,5 @@
 import React from 'react';
-import { LanguageSelector } from '../ui';
+import { LanguageSelector } from '../../ui';
 import './app-footer.component.css';
 
 export const AppFooter: React.FC = () => {
